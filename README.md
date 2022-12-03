@@ -1,1 +1,1 @@
-# Tensorflow-Object-Detection-Installation-and-ANPReasyOCR-Streamlit-App
+# Tensorflow Object Detection Installation and ANPReasyOCR Streamlit-App
