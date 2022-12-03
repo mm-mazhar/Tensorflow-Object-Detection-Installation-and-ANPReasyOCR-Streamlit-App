@@ -19,7 +19,7 @@
 - Finally, After Verification step following result must be seen otherwise installation is messed up preferable something wrong with pycocotools.
     <table style="width:100%">
         <tr>
-            <td><img src="https://i.imgur.com/uRsX4Q7.jpg" width="75px" height=50px/></td>
+            <td><img src="https://i.imgur.com/uRsX4Q7.jpg" width="200px" height=150px/></td>
         </tr>
     </table>
 - RUN `streamlit run app.py`
