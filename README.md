@@ -6,7 +6,7 @@
 - `conda install -n envobjdetection ipykernel --update-deps --force-reinstall` or `python -m ipykernel install --user --name=envobjdetection`
 - `pip install -r win_tfod1_requirements.txt` for Windows `pip install -r linux_tfod1_requirements.txt` for Linux
 - RUN
-    For Windows `python python ./objdetection_installation.py`
+    For Windows `python ./objdetection_installation.py`
     For Linux `bash ./objdetection_installation.sh`
 - Error handling: Please use this tutorial: https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html
     - During 'Install the Object Detection API',  if `no module error` is occured then just find the relevent `pip install <module name>` command and run it
