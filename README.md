@@ -4,7 +4,7 @@
 - `conda create -n envobjdetection pip python=3.9` or `python -m venv envobjdetection`
 - `conda activate envobjdetection` or `.\envobjdetection\Scripts\activate` for Windows `source envobjdetection/bin/activate` for Linux
 -  Optional `conda install -n envobjdetection ipykernel --update-deps --force-reinstall` or `python3 -m ipykernel install --user --name=envobjdetection`
-- `pip install -r win_tfod1_requirements.txt` for Windows `pip install -r linux_tfod1_requirements.txt` for Linux
+- `pip install -r win_tfod1_requirements.txt` for Windows
 - RUN
     For Windows `python ./objdetection_installation.py`
     For Linux `bash ./objdetection_installation.sh`
