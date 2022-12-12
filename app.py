@@ -537,15 +537,18 @@ def main():
                     time.sleep(1/fps_input)
                     print("Sleeping: ", 1/fps_input, "\n")
                     VideoOutPut.write(image_np_with_detections)        
-                            
-                    #Dashboard            
-                    kpi1_text.write(f"<h3 style='text-align: left; color: red;'>{int(fps_input)}</h3>", unsafe_allow_html=True)
-                    #kpi1_text.write(f"<h4 style='text-align: left; color: red;'>{int(fps)}</h4>", unsafe_allow_html=True)
-                    kpi2_text.write(f"<h4 style='text-align: left; color: red;'>{text}</h4>", unsafe_allow_html=True)
-                    kpi3_text.write(f"<h4 style='text-align: left; color: red;'>{width}</h4>", unsafe_allow_html=True)
-                    kpi4_text.write(f"<h4 style='text-align: left; color: red;'>{height}</h4>", unsafe_allow_html=True)
-                    #Display on Dashboard
-                    stframe.image(cv2.resize(image_np_with_detections, (width, height)), channels = 'BGR', use_column_width = True)
+                    
+                    try:
+                        #Dashboard            
+                        kpi1_text.write(f"<h3 style='text-align: left; color: red;'>{int(fps_input)}</h3>", unsafe_allow_html=True)
+                        #kpi1_text.write(f"<h4 style='text-align: left; color: red;'>{int(fps)}</h4>", unsafe_allow_html=True)
+                        kpi2_text.write(f"<h4 style='text-align: left; color: red;'>{text}</h4>", unsafe_allow_html=True)
+                        kpi3_text.write(f"<h4 style='text-align: left; color: red;'>{width}</h4>", unsafe_allow_html=True)
+                        kpi4_text.write(f"<h4 style='text-align: left; color: red;'>{height}</h4>", unsafe_allow_html=True)
+                        #Display on Dashboard
+                        stframe.image(cv2.resize(image_np_with_detections, (width, height)), channels = 'BGR', use_column_width = True)
+                    except Exception as e:
+                        print(e)
                     
                 else:
                     break
