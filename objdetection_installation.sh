@@ -73,7 +73,7 @@ echo "#################### Verifying Insatallation "
 VERIFICATION_SCRIPT='./Tensorflow/models/research/object_detection/builders/model_builder_tf2_test.py'
 python3 $VERIFICATION_SCRIPT
 
-# echo "##### Installing Requirements.txt #####"
-# pip install -r tfod1_requirements.txt
+echo "##### Installing Requirements.txt #####"
+pip install -r tfod1_requirements.txt
 
 echo "__________________ Script END __________________"
