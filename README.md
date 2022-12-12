@@ -3,7 +3,7 @@
 - `git clone "https://github.com/mazqoty/Tensorflow-Object-Detection-Installation-and-ANPReasyOCR-Streamlit-App.git"`
 - `conda create -n envobjdetection pip python=3.9` or `python -m venv envobjdetection`
 - `conda activate envobjdetection` or `.\envobjdetection\Scripts\activate` for Windows `source envobjdetection/bin/activate` for Linux
-- `conda install -n envobjdetection ipykernel --update-deps --force-reinstall` or `python -m ipykernel install --user --name=envobjdetection`
+- `conda install -n envobjdetection ipykernel --update-deps --force-reinstall` or `python3 -m ipykernel install --user --name=envobjdetection`
 - `pip install -r win_tfod1_requirements.txt` for Windows `pip install -r linux_tfod1_requirements.txt` for Linux
 - RUN
     For Windows `python ./objdetection_installation.py`
