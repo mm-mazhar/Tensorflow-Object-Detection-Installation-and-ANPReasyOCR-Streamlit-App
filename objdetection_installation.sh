@@ -60,14 +60,14 @@ cd ../../../
 
 ##ideally, this package should get installed when installing the Object Detection API as documented in the Install the Object Detection API section above, 
 ##however the installation can fail for various reasons and therefore it is simpler to just install the package beforehand, in which case later installation will be skipped.
-echo "#################### COCO API installation "
-mkdir -p './cocoapi'
-git clone https://github.com/cocodataset/cocoapi.git
-cd './cocoapi/PythonAPI'
-make
-echo $PWD
-cp -r pycocotools/. $PROJECT_FOLDER'/Tensorflow/models/research/'
-cd ../../
+#echo "#################### COCO API installation "
+#mkdir -p './cocoapi'
+#git clone https://github.com/cocodataset/cocoapi.git
+#cd './cocoapi/PythonAPI'
+#make
+#echo $PWD
+#cp -r pycocotools/. $PROJECT_FOLDER'/Tensorflow/models/research/'
+#cd ../../
 
 echo "#################### Verifying Insatallation "
 VERIFICATION_SCRIPT='./Tensorflow/models/research/object_detection/builders/model_builder_tf2_test.py'
