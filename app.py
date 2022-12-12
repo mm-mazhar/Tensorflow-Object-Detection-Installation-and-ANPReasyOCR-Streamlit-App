@@ -396,7 +396,7 @@ def main():
                 else:
                     break
             
-            vid.release()
+            cap.release()
             VideoOutPut.release()
         
         #Zip and Downloads    
