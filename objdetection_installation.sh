@@ -74,6 +74,6 @@ VERIFICATION_SCRIPT='./Tensorflow/models/research/object_detection/builders/mode
 python3 $VERIFICATION_SCRIPT
 
 echo "##### Installing Requirements.txt #####"
-pip install -r tfod1_requirements.txt
+pip install -r linux_tfod1_requirements.txt
 
 echo "__________________ Script END __________________"
