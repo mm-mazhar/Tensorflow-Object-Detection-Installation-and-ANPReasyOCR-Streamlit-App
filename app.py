@@ -315,8 +315,9 @@ def main():
                             zipObj.write(eachFile)
                         zipObj.close()
             except Exception as e:
-                st.write("Error in Zip and Download")
-                st.error(e)
+                #st.write("Error in Zip and Download")
+                #st.error(e)
+                print(e)
             
             try:
                 with open(ZipfilesPaths["detectFromImagesZipFile"], 'rb') as f:
@@ -413,8 +414,9 @@ def main():
                     zipObj.close()
                     
         except Exception as e:
-            st.write("Error in Zip and Download")
-            st.error(e)
+            #st.write("Error in Zip and Download")
+            #st.error(e)
+            print(e)
         
         with open(ZipfilesPaths["detectFromRealTimeFeedZipFile"], 'rb') as f:
             st.sidebar.download_button('Download (.zip) Real Time Feed', f, file_name = 'RealTimeFeed.zip')
@@ -565,8 +567,9 @@ def main():
                     zipObj.close()
                     
         except Exception as e:
-            st.write("Error in Zip and Download")
-            st.error(e)
+            #st.write("Error in Zip and Download")
+            #st.error(e)
+            print(e)
         
         with open(ZipfilesPaths["detectFromVideosZipFile"], 'rb') as f:
             st.download_button('Download (.zip) Video2Text', f, file_name = 'DetectionFromVideos.zip')
